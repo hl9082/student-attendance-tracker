@@ -1,4 +1,4 @@
-[project]
+[tool.poetry]
 name = "student-attendance-system"
 version = "0.1.0"
 description = "A Streamlit-based student attendance tracking system with biometric authentication"
@@ -6,20 +6,8 @@ requires-python = ">=3.10"
 authors = [{name = "Huy Le", email = "hl9082@rit.edu"}]
 keywords = ["streamlit", "attendance", "biometric", "tracking", "student"]
 
-[project.dependencies]
-# Each dependency is an array table
-[[project.dependencies]]
-name = "numpy"
-version = ">=2.2.3"
-
-[[project.dependencies]]
-name = "pandas"
-version = ">=2.2.3"
-
-[[project.dependencies]]
-name = "plotly"
-version = ">=6.0.0"
-
-[[project.dependencies]]
-name = "streamlit"
-version = ">=1.42.1"
+[tool.poetry.dependencies]
+numpy = ">=2.2.3"
+pandas = ">=2.2.3"
+plotly = ">=6.0.0"
+streamlit = ">=1.42.1"
