@@ -2,12 +2,24 @@
 name = "student-attendance-system"
 version = "0.1.0"
 description = "A Streamlit-based student attendance tracking system with biometric authentication"
-requires-python = ">=3.11"
-authors = [{name = "Your Name", email = "your.email@example.com"}]
+requires-python = ">=3.10"
+authors = [{name = "Huy Le", email = "hl9082@rit.edu"}]
 keywords = ["streamlit", "attendance", "biometric", "tracking", "student"]
 
 [project.dependencies]
-numpy = { version = ">=2.2.3" }
-pandas = { version = ">=2.2.3" }
-plotly = { version = ">=6.0.0" }
-streamlit = { version = ">=1.42.1" }
+# Each dependency is an array table
+[[project.dependencies]]
+name = "numpy"
+version = ">=2.2.3"
+
+[[project.dependencies]]
+name = "pandas"
+version = ">=2.2.3"
+
+[[project.dependencies]]
+name = "plotly"
+version = ">=6.0.0"
+
+[[project.dependencies]]
+name = "streamlit"
+version = ">=1.42.1"
