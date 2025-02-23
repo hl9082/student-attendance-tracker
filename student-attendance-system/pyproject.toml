@@ -3,6 +3,8 @@ name = "student-attendance-system"
 version = "0.1.0"
 description = "A Streamlit-based student attendance tracking system with biometric authentication"
 requires-python = ">=3.10"
+authors = ["Huy Le <hl9082@rit.edu>"]
+keywords = ["streamlit", "attendance", "biometric", "tracking", "student"]
 [project.dependencies]
 numpy = ">=2.2.3"
 pandas = ">=2.2.3"
