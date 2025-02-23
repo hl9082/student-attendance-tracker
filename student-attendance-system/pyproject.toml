@@ -2,7 +2,7 @@
 name = "student-attendance-system"
 version = "0.1.0"
 description = "A Streamlit-based student attendance tracking system with biometric authentication"
-authors = [{name = "Huy Le, hl9082@rit.edu"}]
+authors = ["Huy Le, hl9082@rit.edu"]
 keywords = ["streamlit", "attendance", "biometric", "tracking", "student"]
 
 [tool.poetry.dependencies]
