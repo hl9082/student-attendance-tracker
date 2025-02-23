@@ -2,11 +2,11 @@
 name = "student-attendance-system"
 version = "0.1.0"
 description = "A Streamlit-based student attendance tracking system with biometric authentication"
-requires-python = ">=3.10"
 authors = [{name = "Huy Le, hl9082@rit.edu"}]
 keywords = ["streamlit", "attendance", "biometric", "tracking", "student"]
 
 [tool.poetry.dependencies]
+python= ">=3.10"
 numpy = ">=2.2.3"
 pandas = ">=2.2.3"
 plotly = ">=6.0.0"
