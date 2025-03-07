@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 from utils.auth import check_password
 from utils.database import load_users
+import os
 
 st.set_page_config(
     page_title="Student Attendance System",
@@ -32,7 +33,7 @@ def main():
             if check_password(student_id, password):
                 st.session_state.logged_in = True
                 st.session_state.student_id = student_id
-                st.experimental_rerun()
+                st.rerun()
             else:
                 st.error("Invalid credentials")
     else:
@@ -43,7 +44,11 @@ def main():
 
         if st.button("Logout"):
             st.session_state.logged_in = False
-            st.experimental_rerun()
+            st.rerun()
 
 if __name__ == "__main__":
     main()
+    os.system("streamlit run main.py --server.address 0.0.0.0 --server.port 8501")
+
+
+
